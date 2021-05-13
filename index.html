@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- meta settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Card Game</title>
+
+    <script src="index.js"></script>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        &hearts;
+        &spades;
+        Blackjack
+        &diams;
+        &clubs;
+    </header>
+
+    </footer>
+    <div class="game">
+        <div class="game">
+       
+       <div class="game-body">
+              <div class="game-options">
+               <input type="button" id="btnStart" class="btn" value="Start" onclick="starGame()">
+               <input type="button" class="btn" value="Hit" onclick="hitMe()">
+               <input type="button" class="btn" value="Hold" onclick="holdNexPl()">
+               </div>
+       
+                   <div class="status" id="status"></div>
+       
+               <div id="deck" class="deck">
+                   <div id="deckcount">52</div>
+               </div>
+       
+               <div id="players" class="players">
+               </div>
+               <div class="cursor">
+                <div class="circle"></div>               
+                <div class="circle"></div>               
+              Bet:<input type="text" id="betin" name="Bet: " value="$500"> 
+              <button id="submit" value="MINIMUM BET:$100 and $500 bet Placed" class="submit" onclick="bet()">Submit</button> 
+                <p id="new"></p>
+            </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script>
+            document.body.addEventListener("mousemove", e => {
+                gsap.to(".circle",{
+                    x : e.clientX,
+                    y : e.clientY,
+                    stagger: -0.05,
+                })
+            })
+        </script>
+
+</body>
+</html>

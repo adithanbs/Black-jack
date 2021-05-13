@@ -1,0 +1,172 @@
+:root {
+    --mainfont: Segoe UI;
+    --grey: #ccc;
+    --shadow: 5px 5px 8px #333;
+  }
+  
+  html {
+    font-family: var(--mainfont);
+  }
+  
+  body {
+    text-align: center;
+    background-image:url(2.jpg);
+  }
+  
+  header {
+    margin: 10px 0 50px 0;
+    color: #000000;
+    font-size: 1.5rem; 
+  }
+  
+  .players {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 510px;
+  }
+  
+  .players {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+   
+  }
+  
+input[type=text]{
+   background-color: #0d706665;
+   width: 100px;
+   height: 25
+   px;
+   border: 0;
+   border-radius: 4px;
+   box-shadow: var(--shadow);
+   margin-right: 600px;
+   margin-top: 30px;
+   color: whitesmoke;
+   
+  }
+  #new {
+  margin-right: 600px;
+  margin-top: 30px;
+  }
+  
+  
+  .deck {
+    font-weight: 400;
+    margin-right: 700px;
+  }
+  
+  
+  .card {
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(#a72424cc, #000000);
+    /* background-image: url(1.jpg); */
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    width: 130px;
+    height: 190px;
+    margin-bottom: 10px;
+    transition: 900ms;
+    filter: blur(0.5px);
+  }
+  
+  .card::after {
+    transition: 900ms; 
+  }
+  
+  .card::before {
+    transition: 900ms;
+  }
+  
+  .submit {
+    font-family: var(--mainfont);
+    padding: 10px 15px;
+    font-weight: bold;
+    background: #a004048c;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+    transition: 500ms;
+    margin-right: 600px;
+   margin-top: 30px;
+  }
+  .submit:hover {
+    background: #333;
+    color: white;
+    box-shadow:black;
+    transition: 500ms;
+    cursor: pointer;
+  }
+
+  .btn:active {
+    background: #345;
+    border: none;
+    color: white;
+    transition: 500ms;
+  }
+  
+  
+  .submit::after {
+    font-size: 1rem;
+    transition: 500ms;
+  }
+  .submit::before {
+    transition: 500ms;
+  }
+  
+
+
+  .btn {
+    font-family: var(--mainfont);
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #083cac88;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    font-size: 1rem;
+    transition: 500ms;
+    
+  }
+  
+  .btn:hover {
+    background: #333;
+    color: white;
+    box-shadow:black;
+    transition: 500ms;
+    cursor: pointer;
+  }
+  
+  .btn:active {
+    background: #345;
+    border: none;
+    color: white;
+    transition: 500ms;
+  }
+  
+  
+  .btn::after {
+    font-size: 1rem;
+    transition: 500ms;
+  }
+  .btn::before {
+    transition: 500ms;
+  }
+  
+  /* .cursor {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cursor .circle {
+    position: relative;
+    top: -50%;
+    left: -50%;
+    width: 20%;
+    height: 20%;
+    background: linear-gradient(#e00a0a7a, #000000d8 );
+    border-radius: 50%;
+  } */
